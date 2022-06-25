@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFFDF7;
+}
+
+@font-face {
+    font-family: "Bebas-Neue";
+    src: url("/OCR/font/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-Medium";
+    src: url("/OCR/font/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("/OCR/font/Montserrat-Regular.ttf");
+}
+
+header{
+    width: 100%;
+}
+
+.topHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em; 
+}
+
+header img{
+    width: 977px;
+    height: 415px;
+}
+
+h1{
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 86px;
+    letter-spacing: 0.2em;
+}
+
+h1 span{
+    position: absolute;
+    padding-left: 3em;
+
+}
+
+h2{
+    font-family: 'Montserrat-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px; 
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    width: 1060px;
+    height: 50px;
+    background: #39A8ED;
+    border-radius: 12px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+li{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color:white;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+li:hover{
+    background-color:#010e16ac;
+    border-radius: 30px; 
+}
+
+a{
+    text-decoration: none; 
+}
+
+a:visited{
+    color: white;
+}
+
+section{
+    padding-top: 4em;
+}
+
+.searchTrip form{
+        display: grid;
+        grid-template-columns: 1fr repeat(3,250px) 1fr;
+        grid-template-rows: 0.8fr 1fr 2fr;
+        grid-gap: 0,5em;
+        
+    
+}
+
+.searchTrip label:first-child{
+    grid-column-start: 2; 
+}
+
+.searchTrip input{
+    width: 203px;
+    height: 30px;
+    background: rgba(217, 217, 217, 0.71);
+    border-radius: 33px;
+    border-style: none;
+    justify-self: center;
+}
+
+.searchTrip input[type=date]{
+    grid-column-start: 2;
+    align-self: center;
+    text-align: center;
+
+}
+
+.searchTrip input[type=text]{
+    align-self: center;
+    text-align: center;
+}
+
+
+.searchTrip input[type=submit]{
+    grid-column-start:3;
+    grid-row-start:3;
+    margin-top: 2em;
+    width: 244px;
+    height: 45px;
+    background: #39A8ED;
+    border-radius: 31px; 
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: white;  
+    justify-self: center;
+    align-self: center; 
+    transition: transform .2s;
+}
+
+.searchTrip input[type=submit]:hover{
+    transform: scale(1.25);
+    cursor: pointer;
+}
+
+
+
+.searchTrip label{
+    font-family: 'Montserrat-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+section img{
+    display: block;
+    margin : 3em auto 3em auto;
+}
+
+.lineGrey{
+    background: rgba(100, 100, 100, 0.37);
+    width: 965px;
+    height: 3px;
+    margin : 3em auto 3em auto;
+}
+
+
+
+aside img{
+    width: 492px;
+    height: 276px;
+}
+
+.descriptionBox{
+    width: 254px;
+    height: 277px;
+    background: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    padding-bottom: 5em;
+}
+
+h3{
+    font-family: 'Montserrat-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+}
+
+.lineYellow{
+    width: 211px;
+    height: 3px;
+    background-color: #FFC555;
+}
+
+.descriptionBox p{
+    font-family: 'Montserrat-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    padding: 5px;
+}
+
+.descriptionBox a{
+    width: 150px;
+    height: 38px;
+    background: #2786DE;
+    border-radius: 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Montserrat-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.descriptionBox a:hover{
+    background-color:#010e16ac;
+}
+
+
+footer{
+    width: 100%;
+    height: 46px;
+    background: #4B4B4B;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer p{
+   
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color : white;
+    padding-right: 2em;
+}
+
+@media all and (max-width: 1400px){
+
+    body{
+        width: auto;
+    }
+
+    .topHeader{
+        flex-direction: column;
+
+    }
+    .title{
+        position: absolute;
+    }
+
+    header img{
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+    }
+
+    ul{
+        gap:0em;
+    }
+
+    li{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    section img{
+
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+    }
+
+    .box{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media all and (max-width: 660px){
+
+    li{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .searchTrip form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:1em;
+    }
+    
+    form :nth-child(1){
+        order : 1;
+    }
+
+    form :nth-child(4){
+        order : 2;
+    }
+
+    form :nth-child(2){
+        order : 3;
+    }
+
+    form :nth-child(5){
+        order : 4;
+    }
+
+    form :nth-child(3){
+        order : 5;
+    }
+
+    form :nth-child(6){
+        order : 6;
+    }
+
+    form :nth-child(7){
+        order : 7;
+    }
+
+}
+
+

@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFFDF7;
+}
+
+@font-face {
+    font-family: "Bebas-Neue";
+    src: url("/OCR/font/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-Medium";
+    src: url("/OCR/font/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("/OCR/font/Montserrat-Regular.ttf");
+}
+
+header{
+    width: 100%;
+}
+
+.topHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em; 
+}
+
+header img{
+    width: 977px;
+    height: 415px;
+}
+
+h1{
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 86px;
+    letter-spacing: 0.2em;
+}
+
+h1 span{
+    position: absolute;
+    padding-left: 3em;
+
+}
+
+h2{
+    font-family: 'Montserrat-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px; 
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    width: 1060px;
+    height: 50px;
+    background: #39A8ED;
+    border-radius: 12px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+li{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color:white;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+li:hover{
+    background-color:#010e16ac;
+    border-radius: 30px; 
+}
+
+a{
+    text-decoration: none; 
+}
+
+a:visited{
+    color: white;
+}
+
+section img{
+
+    width: 915px;
+    height: 359px;
+    padding-bottom: 3em;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    text-align: center;
+    padding: 4em 0 4em 0;
+}
+
+.textContact h2{
+    font-family: 'Montserrat-Medium';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.textContact p{
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.formContact form{
+    display: grid;
+    grid-template-columns: 1fr 330px 330px 1fr;
+    grid-template-rows: 25px 50px 25px 200px 75px;
+    padding-top: 3em;
+    justify-content: center;
+    
+}
+
+.formContact label{
+    font-family: 'Montserrat-Medium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 0.5em;
+}
+
+.formContact input{
+    width: 320px;
+    height: 40px;
+    background: rgba(200, 200, 200, 0.37);
+    border-radius: 13px;
+    border: none;
+    justify-self: center;
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 2em;
+}
+
+
+.formContact input[type=submit]{
+    width: 177px;
+    height: 42px;
+    background: #2786DE;
+    border-radius: 31px;
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    grid-column: 2 / 4;
+    grid-row-start: 5;
+    padding: 0; 
+}
+
+.formContact input[type=submit]:hover{
+    background-color:#010e16ac;
+}
+
+.formContact label:first-child{
+    grid-column-start: 2;
+}
+
+#name{
+    grid-column-start: 2;
+    
+}
+
+#questions{
+    width: 661px;
+    height: 173px;
+    background: rgba(200, 200, 200, 0.37);
+    border-radius: 31px;
+    border: none;
+    grid-column: 2 / 4;
+    grid-row-start: 4;
+    justify-self: center;
+    padding : 20px 0px 0px 20px
+}
+
+#ask{
+    grid-column-start: 2;
+}
+
+footer{
+    width: 100%;
+    height: 46px;
+    background: #4B4B4B;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer p{
+   
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color : white;
+    padding-right: 2em;
+}
+
+@media all and (max-width: 1400px){
+
+    body{
+        width: auto;
+    }
+
+    .topHeader{
+        flex-direction: column;
+
+    }
+    .title{
+        position: absolute;
+    }
+
+    header img{
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+    }
+
+    ul{
+        gap:0em;
+    }
+
+    li{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    section img{
+        max-width: 90%;
+        max-height: 90%;
+    }
+}
+
+@media all and (max-width: 660px){
+
+    li{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .formContact form{
+    grid-template-columns: 1fr 250px 250px 1fr;
+    grid-template-rows: 25px 50px 25px 200px 75px;
+    }
+
+    .formContact input{
+        width: 200px;
+        height: 40px;
+    }
+
+    .formContact label{
+        font-size: 19px;
+    }
+
+    #questions{
+        width: 450px;
+        height: 173px;
+    }
+}
