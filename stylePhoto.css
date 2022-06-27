@@ -114,6 +114,8 @@ section{
 	justify-content: center;
     gap: 3em;
     padding: 7em 3em 7em 3em;
+    width: clamp(300px,100%,1500px);
+    margin: 0 auto;
 }
 
 section img{
