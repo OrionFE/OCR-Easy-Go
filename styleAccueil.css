@@ -188,7 +188,7 @@ section img{
 
 .lineGrey{
     background: rgba(100, 100, 100, 0.37);
-    width: 965px;
+    width: 40%;
     height: 3px;
     margin : 3em auto 3em auto;
 }
